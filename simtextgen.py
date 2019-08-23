@@ -41,7 +41,7 @@ class DatasetChars:
         self.noise = noise
         self.n_samples = n_samples
 
-        self.list_IDs = len(range(n_samples))
+        self.list_IDs = list(range(n_samples))
         self.generator = np.random.choice(max(1000000,n_samples*2),n_samples,replace=False)
     
     def __len__(self):
